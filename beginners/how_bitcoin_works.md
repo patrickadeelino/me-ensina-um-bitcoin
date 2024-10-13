@@ -23,14 +23,14 @@ A seguir, uma explicação simples sobre como isso funciona.
 ### Conteúdo
 
 - [O que é o Bitcoin?](#o-que-é-o-bitcoin)
-- Qual problema o Bitcoin resolve?
-- Como a mineração funciona?
-    - De onde vem os bitcoins?
-- Por que chamamos o arquivo de “blockchain”?
-- Como as transações funcionam?
-- Como você possui bitcoins?
-- Resumo
-- Conclusão
+- [Qual problema o Bitcoin resolve?](#qual-problema-o-bitcoin-resolve)
+- [Como a mineração funciona?](#como-a-mineração-funciona)
+- [De onde vem os bitcoins?](#de-onde-vem-os-bitcoins)
+- [Por que chamamos o arquivo de “blockchain”?](#por-que-esse-arquivo-compartilhado-é-chamado-de-blockchain)
+- [Como as transações funcionam?](#como-funcionam-as-transações)
+- [Como você possui bitcoins?](#como-possuir-bitcoins)
+- [Resumo](#resumo)
+- [Conclusão](#conclusão)
 
 ### O que é o Bitcoin?
 
@@ -234,4 +234,4 @@ O programa do Bitcoin ainda está em desenvolvimento, com mais de [600](https://
 
 ##
 
-[1]: 303.390.532,92362356 bitcoins foram movidos em 2023. O valor unitário do bitcoin em 31 de dezembro de 2023 era **42.258 dólares**.
+[1]: **303.390.532,92362356** bitcoins foram movidos em 2023. O valor unitário do bitcoin em 31 de dezembro de 2023 era **42.258 dólares**.
