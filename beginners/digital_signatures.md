@@ -98,7 +98,7 @@ Em seguida, multiplique esse número pelo ponto gererador na curva elíptica (o 
 
 ![Criando uma assinatura: Parte 1](./images/digital_signatures/digital_signatures_8.png)
 
-A parte **aleatória** da sua **assinatura digital** é o ****ponto na curva que obtemos. Mas nós apenas pegaremos a **coordenada x**.
+A parte **aleatória** da sua **assinatura digital** é o ponto na curva que obtemos. Mas nós apenas pegaremos a **coordenada x**.
 
 ![Criando uma assinatura: Parte 1 (1)](./images/digital_signatures/digital_signatures_9.png)
 
