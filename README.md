@@ -5,7 +5,7 @@ Lendo o site https://learnmeabitcoin.com criado pelo [Greg Walker](https://githu
 ### Por onde eu começo?
 
 * [Guia para Iniciantes](./beginners/README.md) - Uma explicação simples de como o Bitcoin funciona.
-* [Guia Técnico](./technical/README.md) - Explicando como o Bitcoin funciona para programadores.
+* Guia Técnico (Em Breve) - Explicando como o Bitcoin funciona para programadores.
 
 ### Contribuições
 
