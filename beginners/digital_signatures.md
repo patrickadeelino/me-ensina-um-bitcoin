@@ -110,7 +110,7 @@ Chamaremos isso de “r” para simplificar.
 - Esse é basicamente o mesmo processo de criar uma **chave privada** e uma **chave pública.** Porém aqui nós estamos fazendo isso para adicionar um elemento aleatório dentro da nossa assinatura digital.
 - Esse elemento único ajuda a garantir que cada assinatura digital é única.
 
-Com isso, nós já temos a *primeira metade* da nossa *assinatura digital* pronta*,* mas ainda não utilizamos nossa **chave privada**.  Aqui é onde a segunda metade começa…
+Com isso, nós já temos a *primeira metade* da nossa *assinatura digital* pronta, mas ainda não utilizamos nossa **chave privada**.  Aqui é onde a segunda metade começa…
 
 
 ### 2. Parte da Assinatura
