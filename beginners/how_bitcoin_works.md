@@ -36,17 +36,17 @@ A seguir, uma explicação simples sobre como isso funciona.
 
 O Bitcoin é apenas um programa de computador. Você pode [baixá-lo](https://bitcoin.org/en/download) e executá-lo no seu computador.
 
-![Baixar programa](./images/how_btc_works_1.png)
+![Baixar programa](./images/how_btc_works/how_btc_works_1.png)
 
 
 Quando você roda o programa pela primeira vez, ele se conecta a computadores executando o mesmo programa, e eles começam a compartilhar um arquivo com você. Este arquivo é uma grande lista de [transações](https://learnmeabitcoin.com/technical/transaction/) e é chamado de [blockchain](https://learnmeabitcoin.com/technical/blockchain/).
 
-![Compartilhando arquivo](./images/how_btc_works_2.png)
+![Compartilhando arquivo](./images/how_btc_works/how_btc_works_2.png)
 
 
 Quando uma nova transação entra na rede, ela é retransmitida de computador para computador até que todos tenham uma cópia da transação. Em intervalos de aproximadamente 10 minutos, um computador aleatório (nó) na rede adiciona as últimas transações recebidas à blockchain e compartilha as atualizações com todos os outros nós.
 
-![Notificando nova transação](./images/how_btc_works_3.png)
+![Notificando nova transação](./images/how_btc_works/how_btc_works_3.png)
 
 Como resultado, o progama Bitcoin cria uma enorme [rede](https://learnmeabitcoin.com/technical/networking/) de computadores que se comunicam entre si para compartilhar um arquivo e atualizá-lo com as novas transações.
 
@@ -57,7 +57,7 @@ O Bitcoin resolve o problema de permitir um **sistema de pagamento que opera sem
 A retransmissão de transações através de uma rede de computadores já era possível antes do Bitcoin. Entretanto, o problema era a possibilidade de inserir transações conflitantes nessa rede. Por exemplo, você poderia criar duas transações separadas que gastam a mesma moeda digital e enviá-las à rede ao mesmo tempo.
 
 Isso é conhecido como um **“gasto-duplo”**:
-![Evitando gasto-duplo](./images/how_btc_works_4.png)
+![Evitando gasto-duplo](./images/how_btc_works/how_btc_works_4.png)
 
 Alguns computadores irão receber a transação <span style="color:green">verde</span> primeiro, enquanto outros irão receber primeiro a transação <span style="color:red">vermelha</span>.
 
@@ -67,13 +67,13 @@ Então, quem decidirá qual transação veio primeiro e deveria seria ser a úni
 
 O Bitcoin resolve esse problema forçando os nós a manterem todas as transações recebidas em memória antes de escreve-lás no arquivo. Então, em intervalos de 10 minutos, um nó aleatório adicionará as transações da memória ao arquivo.
 
-![Minerando novo bloco](./images/how_btc_works_5.png)
+![Minerando novo bloco](./images/how_btc_works/how_btc_works_5.png)
 
 O arquivo atualizado é então compartilhado com o restante da rede. Os nós aceitarão as transações no arquivo como as “transações corretas” e removerão qualquer transação conflitante de sua memória.
 
 Assim, nenhuma transação com gasto duplo irá ser escrita no arquivo, e todos os nós atualizarão regularmente para a mesma versão do arquivo compartilhado.
 
-![Compartilhando bloco minerado com os nós na rede](./images/how_btc_works_6.png)
+![Compartilhando bloco minerado com os nós na rede](./images/how_btc_works/how_btc_works_6.png)
 
 Esse processo de adicionar transações a esse arquivo é chamado de [mineração](https://learnmeabitcoin.com/technical/mining/), e é uma competição que acontece em toda a rede, não podendo ser controlada por um único nó.
 
@@ -88,18 +88,18 @@ Qualquer nó pode então tentar minerar as transações de sua memória para o a
 Para fazer isso, um nó irá agrupar as transações que estão em seu [pool de memória](https://learnmeabitcoin.com/technical/mining/memory-pool/) em um contêiner chamado [bloco](https://learnmeabitcoin.com/technical/block/), e então usar *poder de processamento* para tentar adicionar esse bloco de transações à blockchain.
 
 
-![Agrupando transações em memória em um bloco](./images/how_btc_works_7.png)
+![Agrupando transações em memória em um bloco](./images/how_btc_works/how_btc_works_7.png)
 
 De onde vem esse poder de processamento? Bem, para adicionar esse bloco à blockchain, você deve passar seu bloco de transações em algo chamado [função hash](https://learnmeabitcoin.com/technical/cryptography/hash-function/). Uma função hash é basicamente um mini programa de computador que irá receber uma quantidade de dados, embaralhá-los, e gerar um número completamente único (e imprevisível).
 
 
-![Passando o bloco em uma função hash](./images/how_btc_works_8.png)
+![Passando o bloco em uma função hash](./images/how_btc_works/how_btc_works_8.png)
 
 
 Para que seu bloco seja adicionado com sucesso à blockchain, esse número (ou [hash do bloco](https://learnmeabitcoin.com/technical/block/hash/)) deve ser menor do que o [alvo](https://learnmeabitcoin.com/technical/block/hash/), que é um limite que todos na rede concordam.
 
 
-![Tentando encontrar um hash do bloco abaixo do alvo](./images/how_btc_works_9.png)
+![Tentando encontrar um hash do bloco abaixo do alvo](./images/how_btc_works/how_btc_works_9.png)
 
 Eventualmente um dos nós (ou mineradores) na rede irá encontrar um hash do bloco abaixo do alvo, e esse bloco de transações será adicionado à blockchain.
 
@@ -117,7 +117,7 @@ Em resumo, o processo de mineração usa *poder de processamento* para executar 
 
 Como um incentivo ao uso de poder de processamento para tentar adicionar novos blocos de transações à blockchain, cada novo bloco cria uma quantidade fixa de bitcoins que não existia anteriormente. Portanto, se você for capaz de minerar um bloco com sucesso, você é apto a “enviar” esses novos bitcoins para si mesmo como recompensa pelo seu esforço.
 
-![Recebendo uma recompensa por minerar](./images/how_btc_works_10.png)
+![Recebendo uma recompensa por minerar](./images/how_btc_works/how_btc_works_10.png)
 
 Esses novos bitcoins são chamados de [recompensa do bloco](https://learnmeabitcoin.com/technical/mining/block-reward/), e é por isso que esse processo é chamado de “mineração”.
 
@@ -125,17 +125,17 @@ Esses novos bitcoins são chamados de [recompensa do bloco](https://learnmeabitc
 
 Transações não são adicionadas ao arquivo individualmente, elas são agrupadas e adicionadas em blocos. Cada um desses blocos é contruído no topo do último existente, fazendo com que esse arquivo seja uma cadeia de blocos; dai o nome [blockchain](https://learnmeabitcoin.com/technical/blockchain/).
 
-![Criando uma cadeia de blocos de transações interligados](./images/how_btc_works_11.png)
+![Criando uma cadeia de blocos de transações interligados](./images/how_btc_works/how_btc_works_11.png)
 
 Além disso, cada nó na rede sempre adotará a maior cadeia de blocos que receber como a versão “oficial” da blockchain.
 
 Isso significa que mineradores sempre tentarão construir no topo da “ponta” da maior cadeia de blocos conhecida, e qualquer transação que não faça parte da maior cadeia será invalidada.
 
-![Utilizando a maior blockchain como a válida](./images/how_btc_works_12.png)
+![Utilizando a maior blockchain como a válida](./images/how_btc_works/how_btc_works_12.png)
 
 Portanto, se alguém quiser reescrever a história das transações, será preciso reconstruir a maior cadeia de blocos para que seja aceita pelos os outros nós na rede. No entanto, para alcançar isso, a único minerador precisaria ter mais *poder de processamento* do que o restante da rede combinado.
 
-![Proteção contra uma tentativa de alterar a blockchain](./images/how_btc_works_13.png)
+![Proteção contra uma tentativa de alterar a blockchain](./images/how_btc_works/how_btc_works_13.png)
 
 
 Como resultado, o esforço combinado da rede torna muito difícil para qualquer indivíduo “ultrapassar” a rede e reescrever a blockchain.
@@ -147,27 +147,27 @@ Em outras palavras, todo o histórico de transações (e seu dinheiro) está pro
 Você pode pensar na blockchain como um local de armazenamento para cofres de depósito, chamados de [saídas](https://learnmeabitcoin.com/technical/transaction/output/). Essas saídas são apenas contêineres que guardam quantidades variadas de bitcoins.
 
 
-![Saídas de transações como cofres digitais](./images/how_btc_works_14.png)
+![Saídas de transações como cofres digitais](./images/how_btc_works/how_btc_works_14.png)
 
 Quando você cria uma transação no bitcoin, você seleciona algumas saídas e as desbloqueia, criando novas saídas e colocando uma travas nelas.
 
-![Montando uma nova transação a partir das saídas de outras](./images/how_btc_works_15.png)
+![Montando uma nova transação a partir das saídas de outras](./images/how_btc_works/how_btc_works_15.png)
 
 Assim, quando você “envia” bitcoins para alguém, na verdade está colocando uma certa quantidade de bitcoins em um novo cofre e travando-o de modo que apenas a pessoa que você está “enviando” possa desbloqueá-lo. 
 
 Por exemplo, se eu quisesse enviar alguns bitcoins para você, eu selecionaria saídas na blockchain que eu posso desbloquear e, em seguida, criaria uma saída que apenas você pode desbloquear. Além disso, se eu não quisesse enviar todos os bitcoins que desbloqueei, criaria uma saída extra como “troco” e bloquearia novamente para mim.
 
 
-![Exemplo de transação com saídas como troco ao remetente](./images/how_btc_works_16.png)
+![Exemplo de transação com saídas como troco ao remetente](./images/how_btc_works/how_btc_works_16.png)
 
 No futuro, se você quiser enviar seus bitcoins para outra pessoa, repetirá o processo de selecionar saídas existentes (que você pode desbloquear) e criará novas saídas a partir delas. Dessa forma, as transações no bitcoin formam uma estrutura semelhante a um gráfo, onde o movimento dos bitcoins é conectado por uma série de transações.
 
-![Transações formando uma estrutura de grafo](./images/how_btc_works_17.png)
+![Transações formando uma estrutura de grafo](./images/how_btc_works/how_btc_works_17.png)
 
 Por fim, quando uma transação é minerada e registrada na blockchain, as saídas que foram utilizadas (gastas) na transação não podem ser utilizadas novamente em outra transação, enquanto as saídas recém criadas estão disponíveis para serem gastas em uma transação futura.
 
 
-![Disponibilizando novas saídas para serem gastas após mineração](./images/how_btc_works_18.png)
+![Disponibilizando novas saídas para serem gastas após mineração](./images/how_btc_works/how_btc_works_18.png)
 
 ### Como possuir bitcoins?
 
@@ -178,7 +178,7 @@ Esse par de chaves é como seu *número de conta bancária e senha*, no Bitcoin 
 Em um cenário em que eu queira enviar alguns bitcoins para você, você precisaria primeiro me informar qual é sua *chave pública*. Ao criar minha transação, eu colocaria a sua *chave pública* dentro da trava na [saída](https://learnmeabitcoin.com/technical/transaction/output/) (o cofre). E quando você fosse enviar esses bitcoins para alguém, usaria sua *chave privada* para desbloquear esse cofre.
 
 
-![Fluxo para receber e gastar bitcoins usando um par de chaves](./images/how_btc_works_19.png)
+![Fluxo para receber e gastar bitcoins usando um par de chaves](./images/how_btc_works/how_btc_works_19.png)
 
 
 Mas onde você consegue esse par de chaves? Bem, com a ajuda da [criptografia](https://learnmeabitcoin.com/technical/cryptography/) você mesmo pode gerá-las.
@@ -188,13 +188,13 @@ Uma *chave privada* é apenas um grande número aleatório, e sua *chave públic
 Mas aqui está um grande detalhe; você pode informar sua *chave pública* para alguém, e essa pessoa não conseguirá fazer o cálculo reverso e descobrir sua *chave privada*.
 
 
-![Gerando chave pública e privada](./images/how_btc_works_20.png)
+![Gerando chave pública e privada](./images/how_btc_works/how_btc_works_20.png)
 
 
 Agora, quando você quiser desbloquear bitcoins que estão atribuídos à sua *chave pública*, você usa sua *chave privada* para criar algo chamado [assinatura digital](https://learnmeabitcoin.com/technical/keys/signature/). Essa **assinatura** prova que você é o proprietário dessa *chave pública* (e, portando, pode desbloquear os bitcoins), sem precisar revelar sua *chave privada*. Essa **assinatura** é **válida apenas** para a transação em questão, não podendo ser usada para desbloquear outros bitcoins enviados para essa *chave pública.*
 
 
-![Provando propriedade dos bitcoins a partir de assinatura digitais](./images/how_btc_works_21.png)
+![Provando propriedade dos bitcoins a partir de assinatura digitais](./images/how_btc_works/how_btc_works_21.png)
 
 Esse sistema é conhecido como Criptográfia de Chave Pública e está disponível desde 1978 (veja [RSA](https://en.wikipedia.org/wiki/RSA_(cryptosystem))). O Bitcoin utiliza esse sistema para permitir que qualquer pessoa gere suas chaves para enviar e receber bitcoins de forma segura, sem a necessidade de uma autoridade central para emitir contas e senhas.
 
@@ -205,7 +205,7 @@ Esse sistema é conhecido como Criptográfia de Chave Pública e está disponív
 
 
 
-![Resumo do fluxo do Bitcoin](./images/how_btc_works_22.png)
+![Resumo do fluxo do Bitcoin](./images/how_btc_works/how_btc_works_22.png)
 
 Para usar o Bitcoin, você gera seu próprio *par de chaves*. Sua *chave privada* é um número aleatório muito grande, e sua *chave pública* é calculada a partir da privada. Essas chaves podem ser facilmente geradas no seu computador, ou até em algo mais simples, como uma calculadora. No entanto, a maioria das pessoas utiliza a [carteira bitcoin](https://learnmeabitcoin.com/beginners/wallets/) para ajudar a gerar e gerenciar suas chaves.
 
