@@ -11,18 +11,18 @@ Eu escrevi este guia quando estava **começando a aprender sobre o Bitcoin**. Eu
 
 Então, se você não sabe como o Bitcoin funciona e quer entendê-lo o mais rápido possível, este guia é para você.
 
-* [A Rede Bitcoin]()
-* [Nós]()
-* [Mineração]()
-* [A Blockchain]()
-* [Blocos]()
-* [Dificuldade]()
-* [Transações]()
-* [Saídas]()
-* [Travas]()
-* [Chaves e Endereços]()
-* [Chaves Privadas]()
-* [Chaves Públicas]()
+* A Rede Bitcoin
+* Nós
+* Mineração
+* A Blockchain
+* Blocos
+* Dificuldade
+* Transações
+* Saídas
+* Travas
+* Chaves e Endereços
+* Chaves Privadas
+* Chaves Públicas
 * [Assinaturas Digitais](digital_signatures.md)
-* [Testemunha Segregada (SegWit)]()
+* Testemunha Segregada (SegWit)
 
