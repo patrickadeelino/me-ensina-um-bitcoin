@@ -23,6 +23,6 @@ Então, se você não sabe como o Bitcoin funciona e quer entendê-lo o mais rá
 * [Chaves e Endereços]()
 * [Chaves Privadas]()
 * [Chaves Públicas]()
-* [Assinaturas Digitais]()
+* [Assinaturas Digitais](digital_signatures.md)
 * [Testemunha Segregada (SegWit)]()
 
