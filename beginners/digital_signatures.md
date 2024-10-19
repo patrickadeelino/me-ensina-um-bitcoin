@@ -29,7 +29,7 @@ Então, como podemos desbloquear saídas sem fornecer nossa **chave privada**?
 
 <br />
 
-### Insira a assinatura digital
+### Utilize uma assinatura digital
 
 Uma **assinatura digital** pode ser criada a partir de uma **chave privada** para provar que você conhece a chave privada de um endereço.
 
