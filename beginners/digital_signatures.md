@@ -76,7 +76,7 @@ A utilização de assinaturas digitais tem duas etapas:
 
 Lembre-se, o objetivo de utilizar uma **assinatura digital** é provar que você é o proprietário de uma **chave pública.**
 
-> **Dica:** Não esqueça que um endereço é apenas uma **codificação de uma chave pública** - **codificada** e apresentada de outra forma.
+> **Dica:** Não esqueça que um endereço é apenas uma **codificação de uma chave pública** (apresentada de outra forma).
 
 Eu sei que no início parece mágica, mas é apenas matemática.
 
