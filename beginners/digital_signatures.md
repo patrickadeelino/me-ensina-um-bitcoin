@@ -60,7 +60,7 @@ Então, se alguém tentar utilizar essa assinatura digital em uma transação di
 
 ![Invalidando assinatura digital em uma transação incorreta](./images/digital_signatures/digital_signatures_7.png)
 
-Além disso, a assinatura digital também protege contra qualquer alteração nos dados da transação**.** Porque, se os dados da transação forem alterados (por exemplo, se alguém tentar mudar o valor enviado ou o destinatário), a assinatura digital não funcionará mais.
+Além disso, a assinatura digital também protege contra qualquer alteração nos dados da transação. Porque, se os dados da transação forem alterados (por exemplo, se alguém tentar mudar o valor enviado ou o destinatário), a assinatura digital não funcionará mais.
 
 <br />
 
